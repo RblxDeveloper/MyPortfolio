@@ -93,7 +93,8 @@ section{
 .inline-delete-btn,
 .btn,
 .delete-btn,
-.option-btn{
+.option-btn,
+.option-btn1{
    border-radius: .5rem;
    color:#fff;
    font-size: 1.8rem;
@@ -106,7 +107,8 @@ section{
 
 .btn,
 .delete-btn,
-.option-btn{
+.option-btn,
+.option-btn1{
    display: block;
    width: 100%;
 }
@@ -127,6 +129,10 @@ section{
    background-color:var(--orange);
 }
 
+.option-btn1 {
+   background-color: var(--main-color);
+}
+
 .delete-btn,
 .inline-delete-btn{
    background-color: var(--red);
@@ -137,7 +143,8 @@ section{
 .inline-delete-btn:hover,
 .btn:hover,
 .delete-btn:hover,
-.option-btn:hover{
+.option-btn:hover,
+.option-btn1:hover{
    background-color: var(--black);
    color: var(--white);
 }
@@ -536,8 +543,8 @@ section{
 
 .courses .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap:1.5rem;
+   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+   gap: 1.5rem;
    justify-content: center;
    align-items: flex-start;
 }
@@ -555,9 +562,22 @@ section{
    margin-bottom: 2.5rem;
 }
 
+.courses .box-container .box .tuto1{
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+}
+
 .courses .box-container .box .tutor img{
-   height: 8rem;
-   width: 8rem;
+   height: 10rem;
+   width: 10rem;
+   border-radius: 50%;
+   /* object-fit: cover; */
+}
+
+.courses .box-container .box .tutor1 img{
+   height: 10rem;
+   width: 10rem;
    border-radius: 50%;
    /* object-fit: cover; */
 }
@@ -568,7 +588,18 @@ section{
    margin-bottom: .2rem;
 }
 
+.courses .box-container .box .tutor1 h3{
+   font-size: 1.8rem;
+   color: var(--black);
+   margin-bottom: .2rem;
+}
+
 .courses .box-container .box .tutor span{
+   font-size: 1.3rem;
+   color:var(--light-color);
+}
+
+.courses .box-container .box .tutor1 span{
    font-size: 1.3rem;
    color:var(--light-color);
 }
@@ -1112,7 +1143,7 @@ section{
    height: 10rem;
    width: 10rem;
    border-radius: 50%;
-   object-fit: cover;
+   /* object-fit: cover; */
    margin-bottom: 1rem;
 }
 
